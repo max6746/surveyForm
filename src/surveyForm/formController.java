@@ -12,12 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 public class formController extends HttpServlet{
 	   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	   {
-		   /*String em = request.getParameter("email");
-		      String un = request.getParameter("uname");
-		      String pa = request.getParameter("pass");
-		      String ge = request.getParameter("gender");
-		      String[] co = request.getParameterValues("course");
-		       */
+		   
 			   int set1a=0, set1b=0, set2a=0, set2b=0, set3a=0, set3b=0, set4a=0, set4b=0;
 			   String s;
 			   
@@ -106,17 +101,7 @@ public class formController extends HttpServlet{
 		      if(set4a>set4b)
 		    	  pw.write("<h3> Set 4 result: A </h3>");
 		      else pw.write("<h3> Set 4 result: B </h3>");
-		      /*pw.write("<h2> Following data received sucessfully.. <h2> <br>");
-		      pw.write("<h3> Email: "+ em +" </h3>");
-		      pw.write("<h3> User name: "+ un +" </h3>");
-		      pw.write("<h3> Password: "+ pa +" </h3>");
-		      pw.write("<h3> Gender: "+ ge +" </h3>");
-		      pw.write("<h3> Course:  ");
-		      for(String c:co)
-		      {
-		         pw.write(  c+"   ");
-		      }
-		      pw.write("</h3>");*/
+		     
 			   
 	   }
 }
